@@ -24,7 +24,13 @@ export function Navbar() {
     >
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
-        <div className="text-2xl font-bold">MyPortfolio</div>
+        <motion.div
+          className="text-xl font-bold cursor-pointer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Portfolio
+        </motion.div>
 
         {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
@@ -40,19 +46,25 @@ export function Navbar() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-black md:static md:w-auto md:flex md:items-center md:space-x-8`}
+          } absolute top-full right-0 w-full max-md:w-[70%] bg-black md:static md:w-auto md:flex md:items-center md:space-x-5`}
         >
           {navItems.map((item) => (
-            <Link
+            <motion.div
               key={item.id}
-              to={item.id}
-              smooth={true}
-              duration={500}
-              className="block md:inline-block text-lg px-4 py-2 font-medium hover:text-blue-400 transition-colors duration-300"
-              onClick={() => setIsOpen(false)} // Close menu on link click
+              whileHover={{ scale: 0.96, color: "#1e90ff" }}
+              whileTap={{ scale: 0.95 }}
+              className="cursor-pointer"
             >
-              {item.label}
-            </Link>
+              <Link
+                to={item.id}
+                smooth={true}
+                duration={200}
+                className="block  border-y border-white  md:inline-block text-lg px-4  max-md:py-1 font-medium hover:text-blue-400 transition-colors duration-300"
+                onClick={() => setIsOpen(false)} // Close menu on link click
+              >
+                {item.label}
+              </Link>
+            </motion.div>
           ))}
         </div>
       </div>
