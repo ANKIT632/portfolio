@@ -1,36 +1,61 @@
 "use client";
-import { FaHome, FaUser, FaProjectDiagram, FaEnvelope, FaCertificate } from "react-icons/fa";
 
-export  function Navbar() {
+import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { useState } from "react";
+
+export function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { id: "hero", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "certificates", label: "Certificates" },
+    { id: "contact", label: "Contact" },
+  ];
+
   return (
-    <nav className="bg-gray-800 text-white p-4 fixed w-full top-0 z-10">
-      <ul className="flex justify-center space-x-8">
-        <li className="hover:text-blue-400">
-          <a href="#hero" className="flex items-center">
-            <FaHome className="mr-2" /> Home
-          </a>
-        </li>
-        <li className="hover:text-blue-400">
-          <a href="#about" className="flex items-center">
-            <FaUser className="mr-2" /> About
-          </a>
-        </li>
-        <li className="hover:text-blue-400">
-          <a href="#projects" className="flex items-center">
-            <FaProjectDiagram className="mr-2" /> Projects
-          </a>
-        </li>
-        <li className="hover:text-blue-400">
-          <a href="#certificates" className="flex items-center">
-            <FaCertificate className="mr-2" /> Certificates
-          </a>
-        </li>
-        <li className="hover:text-blue-400">
-          <a href="#contact" className="flex items-center">
-            <FaEnvelope className="mr-2" /> Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <motion.nav
+      className="fixed top-0 left-0 w-full bg-black text-white py-4 shadow-lg z-50"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="container mx-auto flex justify-between items-center px-4">
+        {/* Logo */}
+        <div className="text-2xl font-bold">MyPortfolio</div>
+
+        {/* Hamburger Menu for Mobile */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-white focus:outline-none"
+          >
+            {isOpen ? "✖" : "☰"}
+          </button>
+        </div>
+
+        {/* Navigation Links */}
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          } absolute top-full left-0 w-full bg-black md:static md:w-auto md:flex md:items-center md:space-x-8`}
+        >
+          {navItems.map((item) => (
+            <Link
+              key={item.id}
+              to={item.id}
+              smooth={true}
+              duration={500}
+              className="block md:inline-block text-lg px-4 py-2 font-medium hover:text-blue-400 transition-colors duration-300"
+              onClick={() => setIsOpen(false)} // Close menu on link click
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </motion.nav>
   );
 }
