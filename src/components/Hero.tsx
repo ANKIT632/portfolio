@@ -131,7 +131,7 @@ export function Hero() {
                 <br />
                 I craft <span className="text-purple-400 font-bold">beautiful</span> and <span className="text-pink-400 font-bold">high-performance</span> web apps.<br />
                 My journey blends <span className="text-blue-300">React</span>, <span className="text-purple-300">Node.js</span>, and <span className="text-green-300">cutting-edge tech</span> with a passion for design and user experience.<br />
-                <span className="italic text-gray-400">Turning ideas into reality, one line of code at a time.</span>
+                <span className="italic text-gray-400">&quot;Turning ideas into reality, one line of code at a time.&quot;</span>
               </motion.p>
 
               {/* Social Icons */}
