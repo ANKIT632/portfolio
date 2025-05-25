@@ -20,7 +20,8 @@ export function Hero() {
         <meta property="og:description" content="Explore the portfolio of Ankit Kumar Gupta, a creative software engineer and unique designer. Contact: ankit@example.com" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/your-og-image.png" />
-        <meta property="og:url" content="https://yourdomain.com/" />
+       <meta property="og:url" content="https://ankitkumargupta.me" />
+       <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://yourdomain.com/" />
       </Head>
 
