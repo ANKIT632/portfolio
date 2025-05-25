@@ -16,7 +16,7 @@ export function Footer() {
           <span className="flex items-center gap-2 text-xs text-cyan-100 opacity-80">
             <FaMapMarkerAlt className="text-cyan-400" /> India, Remote Worldwide
           </span>
-          <span className="text-xs text-cyan-100 opacity-80">Fullstack Developer</span>
+          <span className="text-xs text-cyan-100 opacity-80">Software Engineer | Fullstack Developer</span>
         </div>
         {/* Center: Quick Links */}
         <div className="flex flex-col items-center gap-2">

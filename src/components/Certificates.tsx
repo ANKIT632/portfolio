@@ -16,8 +16,8 @@ export function Certificates() {
       <div className="pointer-events-none absolute -bottom-24 -right-24 w-80 h-80 bg-gradient-to-tr from-cyan-400 via-blue-300 to-blue-400 opacity-20 blur-2xl rounded-full" />
 
       <div className="relative z-10 flex flex-col items-center mb-12">
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400">
-          <span className="inline-block animate-pulse">🎓</span> Certificates
+        <h2 className="text-4xl  font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400">
+         Certificates
         </h2>
         <p className="text-center text-base sm:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
           My professional certifications showcase my commitment to continuous learning and expertise in modern web technologies.

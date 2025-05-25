@@ -20,7 +20,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-16 px-4 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
       <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 drop-shadow-lg">
-        <span className="inline-block animate-pulse">💼</span> Experience
+         Experience
       </h2>
       <div className="relative max-w-3xl mx-auto">
         {/* Vertical line */}

@@ -47,8 +47,8 @@ export function Projects() {
       <div className="absolute -bottom-32 -right-32 w-[400px] h-[400px] bg-gradient-to-tr from-pink-400 via-yellow-300 to-blue-400 opacity-20 blur-3xl rounded-full z-0" />
 
       <div className="relative z-10 flex flex-col items-center mb-14">
-        <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg tracking-tight text-center">
-          <span className="inline-block animate-pulse">🚀</span> My Projects
+        <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg tracking-tight text-center">
+         My Projects
         </h2>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl text-center">
           A showcase of my favorite work—<span className="text-blue-500 font-semibold">modern</span>, <span className="text-purple-500 font-semibold">scalable</span>, and <span className="text-pink-500 font-semibold">creative</span> solutions.

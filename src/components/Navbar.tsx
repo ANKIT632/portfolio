@@ -25,13 +25,16 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
-        {/* Logo */}
+      
         <motion.div
-  className="text-xl font-extrabold tracking-tight cursor-pointer bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-200 bg-clip-text text-transparent select-none"
-  whileHover={{ scale: 1.08 }}
->
-  Ankit | Software Engineer
-</motion.div>
+          className="text-xl font-extrabold tracking-tight cursor-pointer bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-200 bg-clip-text text-transparent select-none"
+          whileHover={{ scale: 1.02 }}
+          role="banner"
+          aria-label="Ankit Kumar Gupta | Fullstack Developer Portfolio | Software Engineer | Web Developer"
+          aria-live="polite"
+        >
+          Ankit | Software Engineer
+        </motion.div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-1">

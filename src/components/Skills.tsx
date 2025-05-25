@@ -49,13 +49,13 @@ export function Skills() {
           name="description"
           content="Explore the technical skills of Ankit Kumar Gupta: HTML5, CSS3, JavaScript, TypeScript, React.js, Node.js, Next.js, REST API, GraphQL, UI/UX, MongoDB, SQL, MySQL, Data Structure & Algorithms, Computer Networking and more."
         />
-        <meta name="keywords" content="Ankit Kumar Gupta, Skills, Web Developer, Next.js, React.js, Node.js, REST API, SQL, MongoDB, UI/UX, Portfolio, Data Structure, Algorithms, Computer Networking" />
+        <meta name="keywords" content="Ankit Kumar Gupta,full stack developer,Software Engineer Skills, Web Developer, Next.js, React.js, Node.js, REST API, SQL, MongoDB, UI/UX, Portfolio, Data Structure, Algorithms, Computer Networking" />
         <meta name="author" content="Ankit Kumar Gupta" />
       </Head>
       {/* Unique Header */}
       <div className="flex flex-col items-center mb-14">
-        <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg tracking-tight">
-          <span className="inline-block animate-pulse">🛠️</span> My Skills
+        <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 drop-shadow-lg tracking-tight">
+          My Skills
         </h2>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl text-center">
           Technologies and tools I use to craft <span className="text-blue-500 font-semibold">robust</span>, <span className="text-purple-500 font-semibold">scalable</span>, and <span className="text-pink-500 font-semibold">beautiful</span> digital experiences.

@@ -5,7 +5,7 @@ export function AboutUs() {
     <section id="about" className="py-16 px-4 bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden">
       <div className="relative z-10 flex flex-col items-center mb-12">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400">
-          <span className="inline-block animate-pulse">👋</span> About Me
+          About Me
         </h2>
       </div>
       <div className="relative z-10 max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -29,7 +29,7 @@ export function AboutUs() {
           </ul>
         </div>
         <div className="bg-white/90 rounded-xl shadow p-6 flex flex-col items-center text-center">
-          <h3 className="text-xl font-bold text-blue-700 mb-2">Let's Work Together</h3>
+          <h3 className="text-xl font-bold text-blue-700 mb-2">Let&apos;s Work Together</h3>
           <ul className="text-gray-600 text-sm list-disc list-inside space-y-1 text-left">
             <li>Open to remote, freelance, full-time</li>
             <li>Work well with teams or independently</li>
