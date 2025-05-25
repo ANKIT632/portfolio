@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ankitkumargupta.me
+
+# Sitemaps
+Sitemap: https://ankitkumargupta.me/sitemap.xml
