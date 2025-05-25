@@ -1,8 +1,8 @@
 "use client";
-
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +10,8 @@ export function Navbar() {
   const navItems = [
     { id: "hero", label: "Home" },
     { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "certificates", label: "Certificates" },
     { id: "contact", label: "Contact" },
@@ -17,57 +19,68 @@ export function Navbar() {
 
   return (
     <motion.nav
-      className="sticky top-0 left-0 w-full bg-black text-white py-4 shadow-lg z-50"
+      className="sticky top-0 left-0 w-full bg-gradient-to-r from-blue-900 via-cyan-900 to-blue-800 text-white shadow-lg z-50"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto flex justify-between items-center px-4">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
         <motion.div
-          className="text-xl font-bold cursor-pointer"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Portfolio
-        </motion.div>
+  className="text-xl font-extrabold tracking-tight cursor-pointer bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-200 bg-clip-text text-transparent select-none"
+  whileHover={{ scale: 1.08 }}
+>
+  Ankit | Portfolio
+</motion.div>
 
-        {/* Hamburger Menu for Mobile */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none"
-          >
-            {isOpen ? "✖" : "☰"}
-          </button>
-        </div>
-
-        {/* Navigation Links */}
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } absolute top-full right-0 w-full max-md:w-[70%] bg-black md:static md:w-auto md:flex md:items-center md:space-x-5`}
-        >
+        {/* Desktop Nav */}
+        <div className="hidden md:flex gap-1">
           {navItems.map((item) => (
-            <motion.div
+            <Link
               key={item.id}
-              whileHover={{ scale: 0.96, color: "#1e90ff" }}
-              whileTap={{ scale: 0.95 }}
-              className="cursor-pointer"
+              to={item.id}
+              smooth={true}
+              duration={400}
+              offset={-80}
+              className="px-4 py-2 rounded-lg font-medium text-md hover:bg-gradient-to-r hover:from-blue-700 hover:to-cyan-600 hover:text-white transition-all duration-200 cursor-pointer"
+              activeClass="bg-gradient-to-r from-blue-700 to-cyan-600 text-white"
+              spy={true}
             >
-              <Link
-                to={item.id}
-                smooth={true}
-                duration={200}
-                className="block  border-y border-white  md:inline-block text-lg px-4  max-md:py-1 font-medium hover:text-blue-400 transition-colors duration-300"
-                onClick={() => setIsOpen(false)} // Close menu on link click
-              >
-                {item.label}
-              </Link>
-            </motion.div>
+              {item.label}
+            </Link>
           ))}
         </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="md:hidden text-2xl focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle navigation"
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-gradient-to-b from-blue-900 via-cyan-900 to-blue-800 px-6 py-4 space-y-2 shadow-lg">
+          {navItems.map((item) => (
+            <Link
+              key={item.id}
+              to={item.id}
+              smooth={true}
+              duration={400}
+              offset={-70}
+              className="block px-3 py-2 rounded-lg font-medium text-lg hover:bg-gradient-to-r hover:from-blue-700 hover:to-cyan-600 hover:text-white transition-all duration-200 cursor-pointer"
+              onClick={() => setIsOpen(false)}
+              activeClass="bg-gradient-to-r from-blue-700 to-cyan-600 text-white"
+              spy={true}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </motion.nav>
   );
 }
