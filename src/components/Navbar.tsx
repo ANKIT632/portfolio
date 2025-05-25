@@ -30,7 +30,7 @@ export function Navbar() {
   className="text-xl font-extrabold tracking-tight cursor-pointer bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-200 bg-clip-text text-transparent select-none"
   whileHover={{ scale: 1.08 }}
 >
-  Ankit | Portfolio
+  Ankit | Software Engineer
 </motion.div>
 
         {/* Desktop Nav */}
