@@ -1,6 +1,7 @@
 "use client";
-import Link from "next/link";
+
 import { FaEnvelope, FaLinkedin, FaWhatsapp, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 export function Footer() {
   return (
@@ -22,27 +23,26 @@ export function Footer() {
         <div className="flex flex-col items-center gap-2">
           <span className="font-semibold text-cyan-200 mb-1">Quick Links</span>
           <div className="flex gap-4 text-sm">
-           <div className="flex gap-4 text-sm">
-            <Link href="#about" className="hover:text-cyan-400 transition-colors">About</Link>
-            <Link href="#skills" className="hover:text-cyan-400 transition-colors">Skills</Link>
-            <Link href="#experience" className="hover:text-cyan-400 transition-colors">Experience</Link>
-            <Link href="#projects" className="hover:text-cyan-400 transition-colors">Projects</Link>
-            <Link href="#contact" className="hover:text-cyan-400 transition-colors">Contact</Link>
-          </div>  </div>
+            <ScrollLink to="about" smooth={true} duration={500} className="hover:text-cyan-400 transition-colors cursor-pointer">About</ScrollLink>
+            <ScrollLink to="skills" smooth={true} duration={500} className="hover:text-cyan-400 transition-colors cursor-pointer">Skills</ScrollLink>
+            <ScrollLink to="experience" smooth={true} duration={500} className="hover:text-cyan-400 transition-colors cursor-pointer">Experience</ScrollLink>
+            <ScrollLink to="projects" smooth={true} duration={500} className="hover:text-cyan-400 transition-colors cursor-pointer">Projects</ScrollLink>
+            <ScrollLink to="contact" smooth={true} duration={500} className="hover:text-cyan-400 transition-colors cursor-pointer">Contact</ScrollLink>
+          </div>
         </div>
         {/* Right: Socials */}
         <div className="flex flex-col items-center sm:items-end gap-2">
           <span className="font-semibold text-cyan-200 mb-1">Connect</span>
           <div className="flex gap-5 text-2xl">
             <a
-              href="mailto:ankit@example.com"
+              href="mailto:ankitgupta17878@gmail.com"
               aria-label="Email"
               className="hover:text-cyan-400 transition-colors"
             >
               <FaEnvelope />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ankit-kumar-gupta-69537b228/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -51,7 +51,7 @@ export function Footer() {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/ANKIT632"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -60,7 +60,7 @@ export function Footer() {
               <FaGithub />
             </a>
             <a
-              href="https://wa.me/911234567890"
+              href="https://wa.me/9311062533"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"

@@ -8,3 +8,16 @@
   background-size: 200% 200%, 200% 200%, 200% 200%;
   animation: gradient-xy 10s ease-in-out infinite;
 }
+
+/* Custom scrollbar for project description */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #38bdf8; /* Tailwind cyan-400 */
+  border-radius: 8px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: #0e7490; /* Tailwind cyan-800 */
+  border-radius: 8px;
+}

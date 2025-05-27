@@ -55,27 +55,36 @@ export default function ProjectCard({
           ))}
         </div>
         {/* Description After Tech */}
-        <p className="mt-1 text-base text-center text-white/95 font-semibold bg-blue-900/70 px-3 py-2 rounded-xl shadow-lg mb-2">
+        <div
+          className="mt-1 text-base text-center text-white/95 font-semibold bg-blue-900/70 px-3 py-2 rounded-xl shadow-lg mb-2 overflow-y-auto custom-scroll"
+          style={{ maxHeight: "112px", minHeight: "112px" }}
+        >
           {description}
-        </p>
-        <div className="flex justify-center gap-4 mt-auto">
-          <a
-            href={liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-500 to-cyan-600 text-white text-xs font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
-          >
-            <FaExternalLinkAlt className="mb-0.5" /> Live
-          </a>
-          <a
-            href={githubRepo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-gray-900 to-blue-900 text-white text-xs font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
-          >
-            <FaGithub className="mb-0.5" /> Code
-          </a>
         </div>
+     
+<div className="flex justify-center gap-4 mt-auto">
+  {liveLink && liveLink !== "#" && (
+    <a
+      href={liveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-500 to-cyan-600 text-white text-xs font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
+    >
+      <FaExternalLinkAlt className="mb-0.5" /> Live
+    </a>
+  )}
+  {githubRepo && githubRepo !== "#" && (
+    <a
+      href={githubRepo}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-gray-900 to-blue-900 text-white text-xs font-bold shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
+    >
+      <FaGithub className="mb-0.5" /> Code
+    </a>
+  )}
+</div>
+
       </div>
     </motion.div>
   );

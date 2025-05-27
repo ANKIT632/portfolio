@@ -1,18 +1,62 @@
 "use client";
+
 const experiences = [
   {
-    company: "Tech Solutions Pvt Ltd",
-    role: "Frontend Developer",
-    period: "2022 - Present",
-    description:
-      "Developed and maintained modern web applications using React and Next.js. Collaborated with UI/UX teams to deliver seamless user experiences and optimized performance.",
+    company: "Webseeder Technologies Pvt Ltd",
+    role: "Full Stack Web Developer Intern",
+    period: "Jul 2024 - Sept 2024",
+    remote: true,
+    description: (
+      <>
+        • Developed and maintained full-stack web applications using MongoDB, Express.js, React.js, and Node.js.<br />
+        • Collaborated with a team to design and implement scalable, user-friendly features (e.g., Hotel Management System, Infinity Talent ERP web application).<br />
+        • Used Git for version control and collaborated in an Agile development environment; participated in code reviews, debugging, and testing to maintain high-quality standards.
+      </>
+    ),
+    keySkills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Git & GitHub",
+      "Agile",
+      "Teamwork"
+    ],
   },
   {
-    company: "Web Innovators",
-    role: "Intern Developer",
-    period: "2021 - 2022",
-    description:
-      "Assisted in building responsive websites and dashboards. Gained hands-on experience with JavaScript, Tailwind CSS, and agile workflows.",
+    company: "Personal Startup Project",
+    role: "Founder & Developer",
+    period: "Mar 2025 - Present",
+    remote: true,
+    description: (
+      <>
+        • Founded and developed a web startup project.<br />
+        • Led product design, development, and deployment.<br />
+        • Startup is still in production; deployment pending.<br />
+        • Working on this project alongside other commitments.
+      </>
+    ),
+    keySkills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Motion",
+      "Product Design",
+      "Web Development",
+      "Git & GitHub",
+      "Leadership",
+      "Entrepreneurship"
+    ],
   },
 ];
 
@@ -20,7 +64,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-16 px-4 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
       <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 drop-shadow-lg">
-         Experience
+        Experience
       </h2>
       <div className="relative max-w-3xl mx-auto">
         {/* Vertical line */}
@@ -36,16 +80,36 @@ export function Experience() {
                   <span className="font-bold text-blue-700 text-lg sm:text-xl tracking-wide">
                     {exp.company}
                   </span>
-                  <span className="text-xs sm:text-sm text-cyan-700 font-semibold bg-cyan-50 px-3 py-1 rounded-full mt-2 sm:mt-0">
-                    {exp.period}
-                  </span>
+                  <div className="flex  justify-between gap-2 mt-2 sm:mt-0">
+                    <span className="text-xs sm:text-sm text-cyan-700 font-semibold bg-cyan-50 px-3 py-1 rounded-full">
+                      {exp.period}
+                    </span>
+                    {exp.remote && (
+                      <span className="text-xs sm:text-sm text-green-700 font-semibold bg-green-50 px-3 py-1 rounded-full">
+                        Remote
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <div className="font-semibold text-cyan-700 mb-1 text-base sm:text-lg">
                   {exp.role}
                 </div>
-                <div className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                <div className="text-gray-600 text-sm sm:text-base leading-relaxed mb-2">
                   {exp.description}
                 </div>
+               
+                {exp.keySkills && (
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {exp.keySkills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="bg-cyan-100 text-cyan-700 px-2 py-1 rounded-full text-xs font-semibold"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}

@@ -1,12 +1,24 @@
 "use client";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
-const certificates = Array.from({ length: 6 }).map((_, i) => ({
-  src: "/images/certificate.jpg",
-  alt: "Certificate",
-  title: `Full Stack Web Development ${i + 1}`,
-}));
+const certificates = [
+  {
+    src: "https://drive.google.com/file/d/1xA-6HABirZJEWOYMYcnyv-SWsB5bSYtF/view?usp=sharing",
+    alt: "Backend Development Certificate",
+    title: "Backend Development",
+    issuer: "PhysicsWallah",
+    skills: ["Node.js", "Express.js", "REST FULL API", "MongoDB", "JWT"],
+    type: "pdf",
+  },
+  {
+    src: "https://drive.google.com/file/d/1x9utP-V63A0wS_8rpnmViHeimWchpTYD/view?usp=sharing",
+    alt: "React Development Certificate",
+    title: "React Development",
+    issuer: "Udemy",
+    skills: ["JS concept", "React.js", "React-router", "Fetch-API", "Redux.js"],
+    type: "pdf",
+  },
+];
 
 export function Certificates() {
   return (
@@ -16,8 +28,8 @@ export function Certificates() {
       <div className="pointer-events-none absolute -bottom-24 -right-24 w-80 h-80 bg-gradient-to-tr from-cyan-400 via-blue-300 to-blue-400 opacity-20 blur-2xl rounded-full" />
 
       <div className="relative z-10 flex flex-col items-center mb-12">
-        <h2 className="text-4xl  font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400">
-         Certificates
+        <h2 className="text-4xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400">
+          Certificates
         </h2>
         <p className="text-center text-base sm:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
           My professional certifications showcase my commitment to continuous learning and expertise in modern web technologies.
@@ -36,20 +48,30 @@ export function Certificates() {
             className="bg-white rounded-2xl shadow-xl border border-blue-100 flex flex-col items-center p-5 hover:scale-105 transition-all duration-300 group"
           >
             <div className="relative w-full flex justify-center mb-3">
-              <Image
-                src={cert.src}
-                alt={cert.alt}
-                width={320}
-                height={160}
-                className="rounded-xl object-cover w-full h-[150px] group-hover:scale-105 transition-transform duration-500"
-                style={{ maxHeight: 150, objectFit: "cover" }}
+              <iframe
+                src={cert.src.replace("/view?usp=sharing", "/preview")}
+                title={cert.alt}
+                width="320"
+                height="150"
+                className="rounded-xl w-full h-[150px] border"
+                allow="autoplay"
               />
               <span className="absolute top-2 right-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white text-xs px-3 py-1 rounded-full shadow font-semibold">
                 Verified
               </span>
             </div>
             <span className="text-lg font-bold text-blue-700 text-center mb-1">{cert.title}</span>
-            <span className="text-xs text-cyan-700 text-center">Issued by: Example Institute</span>
+            <span className="text-xs text-cyan-700 text-center mb-2">Issued by: {cert.issuer}</span>
+            <div className="flex flex-wrap justify-center gap-2 mt-1">
+              {cert.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-cyan-100 text-cyan-700 px-2 py-1 rounded-full text-xs font-semibold"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </motion.div>
         ))}
       </div>

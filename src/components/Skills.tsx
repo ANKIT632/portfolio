@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase,
+  FaHtml5,FaSearch, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase,
   FaJava, FaCuttlefish, FaFigma, FaNetworkWired
 } from "react-icons/fa";
 import {
@@ -10,6 +10,8 @@ import {
 import { MdApi } from "react-icons/md";
 import { TbLetterN } from "react-icons/tb";
 import Head from "next/head";
+import { SiRedux, } from "react-icons/si";
+
 
 const skillsData = [
   { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
@@ -21,6 +23,7 @@ const skillsData = [
   { name: "Core Java", icon: FaJava, color: "text-red-500" },
   { name: "C", icon: FaCuttlefish, color: "text-blue-800" },
   { name: "React.js", icon: FaReact, color: "text-cyan-400" },
+  { name: "Redux (State Management)", icon: SiRedux, color: "text-purple-700" },
   { name: "Node.js", icon: FaNodeJs, color: "text-green-600" },
   { name: "Express.js", icon: SiExpress, color: "text-gray-700" },
   { name: "Next.js", icon: TbLetterN, color: "text-gray-900" },
@@ -33,6 +36,7 @@ const skillsData = [
   { name: "MySQL", icon: SiMysql, color: "text-blue-700" },
   { name: "Data Structure & Algorithms", icon: FaDatabase, color: "text-amber-600" },
   { name: "Computer Networking", icon: FaNetworkWired, color: "text-green-800" },
+    { name: "SEO", icon: FaSearch, color: "text-green-600" }, 
 ];
 
 export function Skills() {
