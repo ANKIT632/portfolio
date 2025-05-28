@@ -23,8 +23,8 @@ export function Hero() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://ankitkumargupta.me" />
       </Head
-      
-      
+
+
       >
 
       <main>
@@ -119,6 +119,17 @@ export function Hero() {
                   aria-label="Email"
                 >
                   <FaEnvelope />
+                </a>
+                <a
+                  href="https://leetcode.com/u/ankit_gupta1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1  text-yellow-400 hover:text-yellow-500 transition-colors duration-300 px-3 py-1 rounded-full bg-gray-800/60 border border-yellow-300 font-semibold text-sm"
+                  aria-label="LeetCode (600+ Questions Solved)"
+                  title="LeetCode (600+ Questions Solved)"
+                >
+                  <svg width="1em" height="1em" viewBox="0 0 50 50" fill="currentColor" className="mr-1"><path d="M36.7 36.2c-1.1 1.1-2.9 1.1-4 0l-9.1-9.1c-1.1-1.1-1.1-2.9 0-4l9.1-9.1c1.1-1.1 2.9-1.1 4 0s1.1 2.9 0 4l-7.1 7.1 7.1 7.1c1.1 1.1 1.1 2.9 0 4z" /></svg>
+                  LeetCode <span className="ml-1 text-xs font-bold">(600+)</span>
                 </a>
               </motion.div>
 

@@ -19,7 +19,7 @@ const certificates = [
     type: "pdf",
   },
   {
-    src: "https://drive.google.com/file/d/1e72npMytsMz9vtAxFt6bl1T1qcvXjDYP/view?usp=sharing",
+    src: "https://drive.google.com/file/d/1YuEYgcHSSrKVKZTnQXf9QnIAEHm9oHua/view?usp=sharing",
     alt: "Webseeder Technologies Certification",
     title: "MERN Full-Stack Internship",
     issuer: "Webseeder Technologies pvt. ltd.",
@@ -64,7 +64,7 @@ export function Certificates() {
           Certificates
         </h2>
         <p className="text-center text-base sm:text-lg text-gray-600 max-w-2xl mx-auto mb-4">
-          My professional certifications showcase my commitment to continuous learning and expertise in modern web technologies.
+          My professional certifications showcase my commitment to continuous learning and expertise in technologies.
         </p>
         <div className="w-24 h-1 mt-2 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 rounded-full" />
       </div>
