@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {
-  FaHtml5,FaSearch, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase,
+  FaHtml5, FaSearch, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase,
   FaJava, FaCuttlefish, FaFigma, FaNetworkWired
 } from "react-icons/fa";
 import {
@@ -36,7 +36,7 @@ const skillsData = [
   { name: "MySQL", icon: SiMysql, color: "text-blue-700" },
   { name: "Data Structure & Algorithms", icon: FaDatabase, color: "text-amber-600" },
   { name: "Computer Networking", icon: FaNetworkWired, color: "text-green-800" },
-    { name: "SEO", icon: FaSearch, color: "text-green-600" }, 
+  { name: "SEO", icon: FaSearch, color: "text-green-600" },
 ];
 
 export function Skills() {
@@ -62,7 +62,7 @@ export function Skills() {
           My Skills
         </h2>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl text-center">
-          Technologies and tools I use to craft <span className="text-blue-500 font-semibold">robust</span>, <span className="text-purple-500 font-semibold">scalable</span>, and <span className="text-pink-500 font-semibold">beautiful</span> digital experiences.
+          Technologies and tools I use to craft <span className="text-blue-500 font-semibold">robust</span>, <span className="text-purple-500 font-semibold">scalable</span>, and <span className="text-pink-500 font-semibold">Better</span> digital experiences.
         </p>
         <div className="w-32 h-1 mt-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow-lg" />
       </div>

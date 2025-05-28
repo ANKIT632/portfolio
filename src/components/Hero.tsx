@@ -12,17 +12,20 @@ export function Hero() {
         <title>Ankit Kumar Gupta | Software Engineer & Full Stack Developer</title>
         <meta
           name="description"
-          content="Ankit Kumar Gupta - Software Engineer & Full Stack Developer. Explore my portfolio, projects, and contact details."
+          content="Ankit Kumar Gupta - Software Engineer | Full Stack Developer. Explore my portfolio, projects, and contact details."
         />
         <meta name="keywords" content="Ankit Kumar Gupta, Portfolio, Software Engineer, Full Stack Developer, Web Developer, App Developer" />
         <meta name="author" content="Ankit Kumar Gupta" />
-        <meta property="og:title" content="Ankit Kumar Gupta | Software Engineer & Full Stack Developer" />
+        <meta property="og:title" content="Ankit Kumar Gupta | Software Engineer , Full Stack Developer" />
         <meta property="og:description" content="Explore the portfolio of Ankit Kumar Gupta, a creative software engineer and full stack developer." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ankitkumargupta.me" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://ankitkumargupta.me" />
-      </Head>
+      </Head
+      
+      
+      >
 
       <main>
         <section

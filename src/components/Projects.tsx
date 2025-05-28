@@ -91,7 +91,7 @@ export function Projects() {
           My Projects
         </h2>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl text-center">
-          A showcase of my favorite work—<span className="text-blue-500 font-semibold">modern</span>, <span className="text-purple-500 font-semibold">scalable</span>, and <span className="text-pink-500 font-semibold">creative</span> solutions.
+          A showcase of my work—<span className="text-blue-500 font-semibold">modern</span>, <span className="text-purple-500 font-semibold">scalable</span>, and <span className="text-pink-500 font-semibold">creative</span> solutions.
         </p>
         <div className="w-32 h-1 mt-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full shadow-lg" />
       </div>

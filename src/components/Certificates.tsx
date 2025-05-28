@@ -18,6 +18,38 @@ const certificates = [
     skills: ["JS concept", "React.js", "React-router", "Fetch-API", "Redux.js"],
     type: "pdf",
   },
+  {
+    src: "https://drive.google.com/file/d/1e72npMytsMz9vtAxFt6bl1T1qcvXjDYP/view?usp=sharing",
+    alt: "Webseeder Technologies Certification",
+    title: "MERN Full-Stack Internship",
+    issuer: "Webseeder Technologies pvt. ltd.",
+    skills: ["Javascript", "React.js", "Node.js", "Express.js", "TailwindCss", "Teamwork", "Git & GitHub"],
+    type: "pdf",
+  },
+  {
+    src: "https://drive.google.com/file/d/1Yju983EtSC6DYLYkoQjAhYTks7VAKlJu/view?usp=sharing",
+    alt: "Core Java Certificate",
+    title: "Core Java",
+    issuer: "Great Learning",
+    skills: ["Java", "OOPs", "Problem Solving"],
+    type: "pdf",
+  },
+  {
+    src: "https://drive.google.com/file/d/1YsDWa9eWcG7lu75jFGg5Gniel_Ue_17N/view?usp=sharing",
+    alt: "Competition Certificate Round 1",
+    title: "Competition Certificate - Round 1",
+    issuer: "Coding Ninjas",
+    skills: ["Participation", "Problem Solving","Aptitude & Reasoning"],
+    type: "pdf",
+  },
+  {
+    src: "https://drive.google.com/file/d/1YtNycFLJpHuHjKyIrvj3CHU4p3vWCLgM/view?usp=sharing",
+    alt: "Competition Certificate Round 2",
+    title: "Competition Certificate - Round 2",
+    issuer: "Coding Ninjas",
+    skills: ["Participation", "Problem Solving","Data Structures & Algorithms"],
+    type: "pdf",
+  },
 ];
 
 export function Certificates() {
