@@ -28,16 +28,13 @@ const experiences = [
     ],
   },
   {
-    company: "Personal Startup Project",
+    company: "Startup Project (Development)",
     role: "Founder & Developer",
     period: "Mar 2025 - Present",
     remote: true,
     description: (
       <>
-        • Founded and developed a web startup project.<br />
-        • Led product design, development, and deployment.<br />
-        • Startup is still in production; deployment pending.<br />
-        • Working on this project alongside other commitments.
+       It is a web-based exam preparation platform that offers full-length mock tests, previous year questions (PYQs), and detailed performance analytics. Users can filter questions by subject, topic, and difficulty, and also create custom tests based on preferences. The platform simulates real exam environments and helps students identify strengths and weaknesses for focused, effective, and personalized learning.
       </>
     ),
     keySkills: [
@@ -55,7 +52,8 @@ const experiences = [
       "Web Development",
       "Git & GitHub",
       "Leadership",
-      "Entrepreneurship"
+      "Entrepreneurship",
+      "..."
     ],
   },
 ];
@@ -97,7 +95,7 @@ export function Experience() {
                 <div className="text-gray-600 text-sm sm:text-base leading-relaxed mb-2">
                   {exp.description}
                 </div>
-               
+
                 {exp.keySkills && (
                   <div className="flex flex-wrap gap-2 mt-2">
                     {exp.keySkills.map((skill) => (

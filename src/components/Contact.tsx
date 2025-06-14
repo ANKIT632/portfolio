@@ -36,10 +36,13 @@ export function Contact() {
   return (
     <section id="contact" className="py-16 px-4 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
       <h2 className="text-4xl font-extrabold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400">
-        Contact Me
+        Hire Me
       </h2>
-      <p className="text-center text-base text-gray-600 max-w-xl mx-auto mb-8">
-        Let&apos;s connect for collaboration, projects, or just a friendly hello!
+      <p className="text-center text-base text-gray-700 max-w-xl mx-auto">
+        I’m open to freelance opportunities and innovative projects.
+      </p>
+      <p className="text-center text-base text-gray-700 max-w-xl mx-auto mb-8">
+        Let’s connect to discuss how we can collaborate on innovative solutions, drive results, or simply exchange ideas. Your next project could be the start of something exceptional.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
         {contacts.map((c) => (
