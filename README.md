@@ -56,7 +56,7 @@ Welcome! I'm **Ankit Kumar Gupta**, a passionate Software Engineer & Full Stack 
 ## 📫 Contact
 
 - [LinkedIn](https://www.linkedin.com/in/ankit-kumar-gupta-69537b228/)
-- [Portfolio](https://ankitkumar.me)
+- [Portfolio](https://ankitkumargupta.me)
 - [Email](mailto:ankitgupta17878@gmail.com)
 
 ---
