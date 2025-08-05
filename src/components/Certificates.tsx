@@ -19,7 +19,7 @@ const certificates = [
     type: "pdf",
   },
   {
-    src: "https://drive.google.com/file/d/1YuEYgcHSSrKVKZTnQXf9QnIAEHm9oHua/view?usp=sharing",
+    src: "https://drive.google.com/file/d/1e72npMytsMz9vtAxFt6bl1T1qcvXjDYP/view?usp=sharing",
     alt: "Webseeder Technologies Certification",
     title: "MERN Full-Stack Internship",
     issuer: "Webseeder Technologies pvt. ltd.",
